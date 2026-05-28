@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-TV Kanal Scraper - M3U Oluşturucu (v2)
-Her kanal sayfasına girip gerçek stream/embed URL'sini çeker.
+TV Kanal Scraper - M3U Oluşturucu (v3)
+bg-gledai.video, gledaitv.fan ve rotana.net kanallarını çeker.
 """
 
 import requests
@@ -9,6 +9,7 @@ from bs4 import BeautifulSoup
 import re
 import time
 import json
+import base64
 from datetime import datetime
 
 HEADERS = {
@@ -32,33 +33,21 @@ def fetch(url, timeout=15):
 
 
 def extract_stream_url(html):
-    """HTML içinden oynatılabilir URL çıkar (YouTube, m3u8, mp4, vb.)"""
-
-    # 1. YouTube embed
     yt = re.search(r'youtube\.com/embed/([A-Za-z0-9_\-]{11})', html)
     if yt:
         return f"https://www.youtube.com/watch?v={yt.group(1)}"
-
-    # 2. Doğrudan .m3u8
     m3u8 = re.search(r'(https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*)', html)
     if m3u8:
         return m3u8.group(1)
-
-    # 3. Doğrudan .mp4
     mp4 = re.search(r'(https?://[^\s"\'<>]+\.mp4[^\s"\'<>]*)', html)
     if mp4:
         return mp4.group(1)
-
-    # 4. dailymotion embed
     dm = re.search(r'dailymotion\.com/embed/video/([A-Za-z0-9]+)', html)
     if dm:
         return f"https://www.dailymotion.com/video/{dm.group(1)}"
-
-    # 5. twitch embed
     tw = re.search(r'player\.twitch\.tv/\?channel=([A-Za-z0-9_]+)', html)
     if tw:
         return f"https://www.twitch.tv/{tw.group(1)}"
-
     return None
 
 
@@ -80,8 +69,6 @@ def scrape_bg_gledai():
             break
 
         soup = BeautifulSoup(html, "html.parser")
-
-        # Kanal kartları: <a href="/xxx-online">
         cards = soup.select("a[href$='-online']")
         if not cards:
             break
@@ -91,42 +78,30 @@ def scrape_bg_gledai():
             href = card.get("href", "")
             if not href or href.startswith("http"):
                 continue
-
             img = card.find("img")
             if not img:
                 continue
-
             alt = img.get("alt", "")
             name = alt.replace(" Online", "").strip()
             logo = img.get("src", "")
             if logo.startswith("/"):
                 logo = BG_BASE + logo
 
-            # Kanal sayfasına gir
             page_url = BG_BASE + href if href.startswith("/") else href
             ch_html = fetch(page_url)
             stream_url = extract_stream_url(ch_html) if ch_html else None
 
             if name and stream_url:
-                channels.append({
-                    "name": name,
-                    "logo": logo,
-                    "url": stream_url,
-                    "group": "BG-Gledai",
-                })
+                channels.append({"name": name, "logo": logo, "url": stream_url, "group": "BG-Gledai"})
                 print(f"  ✓ {name} -> {stream_url[:60]}")
                 new_found += 1
             elif name:
                 print(f"  ✗ {name} -> stream bulunamadı, atlandı")
-
             time.sleep(0.7)
 
         if new_found == 0:
             break
-
-        # Sonraki sayfa
-        soup2 = BeautifulSoup(html, "html.parser")
-        if not soup2.select_one("a.next.page-numbers"):
+        if not soup.select_one("a.next.page-numbers"):
             break
         page += 1
         time.sleep(1)
@@ -147,15 +122,9 @@ def scrape_gledaitv_fan():
 
     sitemap = fetch(f"{FAN_BASE}/sitemap.xml")
     if sitemap:
-        live_urls = re.findall(
-            r'<loc>(https://www\.gledaitv\.fan/[^<]+-live-tv\.html)</loc>',
-            sitemap
-        )
-        # HD ve alternative olanları çıkar
-        live_urls = [u for u in live_urls
-                     if "-hd-live" not in u and "-alternative-" not in u]
+        live_urls = re.findall(r'<loc>(https://www\.gledaitv\.fan/[^<]+-live-tv\.html)</loc>', sitemap)
+        live_urls = [u for u in live_urls if "-hd-live" not in u and "-alternative-" not in u]
     else:
-        # Fallback: all-channels
         html = fetch(f"{FAN_BASE}/all-channels.html")
         if not html:
             return channels
@@ -164,8 +133,7 @@ def scrape_gledaitv_fan():
         for a in soup.select("a[href*='-live-tv.html']"):
             href = a.get("href", "")
             if "-hd-live" not in href and "-alternative-" not in href:
-                full = href if href.startswith("http") else FAN_BASE + href
-                live_urls.append(full)
+                live_urls.append(href if href.startswith("http") else FAN_BASE + href)
 
     print(f"  -> {len(live_urls)} kanal sayfası bulundu")
 
@@ -173,39 +141,28 @@ def scrape_gledaitv_fan():
         html = fetch(url)
         if not html:
             continue
-
         soup = BeautifulSoup(html, "html.parser")
-
-        # Kanal adı
         h1 = soup.find("h1")
         name = h1.get_text(strip=True) if h1 else ""
-
-        # Logo
         logo_img = soup.select_one("img[src*='/upload/tv/']")
         logo = ""
         if logo_img:
             logo = logo_img.get("src", "")
             if not logo.startswith("http"):
                 logo = FAN_BASE + logo
-
-        # Kategori
         cat_a = soup.select_one("a[href*='-channels.html']")
         group = cat_a.get_text(strip=True) if cat_a else "GledaiTV Fan"
 
-        # iframe src çek
         iframe = soup.find("iframe")
         iframe_src = iframe.get("src", "") if iframe else ""
-
         stream_url = None
 
-        # iframe'in içeriğine bak
         if iframe_src:
             if "youtube.com" in iframe_src:
                 yt = re.search(r'embed/([A-Za-z0-9_\-]{11})', iframe_src)
                 if yt:
                     stream_url = f"https://www.youtube.com/watch?v={yt.group(1)}"
             elif "gledaitv.fan/live/" in iframe_src or iframe_src.endswith(".html"):
-                # İç embed sayfasına git
                 if not iframe_src.startswith("http"):
                     iframe_src = FAN_BASE + iframe_src
                 inner_html = fetch(iframe_src)
@@ -214,21 +171,14 @@ def scrape_gledaitv_fan():
             else:
                 stream_url = extract_stream_url(iframe_src)
 
-        # iframe bulunamadıysa ham HTML'e bak
         if not stream_url:
             stream_url = extract_stream_url(html)
 
         if name and stream_url:
-            channels.append({
-                "name": name,
-                "logo": logo,
-                "url": stream_url,
-                "group": group,
-            })
+            channels.append({"name": name, "logo": logo, "url": stream_url, "group": group})
             print(f"  ✓ {name} -> {stream_url[:60]}")
         elif name:
             print(f"  ✗ {name} -> stream bulunamadı, atlandı")
-
         time.sleep(0.7)
 
     print(f"  -> Toplam {len(channels)} kanal eklendi")
@@ -236,19 +186,77 @@ def scrape_gledaitv_fan():
 
 
 # ─────────────────────────────────────────────
-# 3. rotana.net (sabit liste - bot koruması var)
+# 3. rotana.net  —  hibridcdn API ile token al
 # ─────────────────────────────────────────────
 
+ROTANA_CHANNELS = [
+    {"slug": "rotana-classical",  "name": "Rotana Classic",    "logo": "https://rotana.net/assets/themes/TriTheme/images/channels/classic.png"},
+    {"slug": "rotana-cinema",     "name": "Rotana Cinema",     "logo": "https://rotana.net/assets/themes/TriTheme/images/channels/cinema.png"},
+    {"slug": "rotana-drama",      "name": "Rotana Drama",      "logo": "https://rotana.net/assets/themes/TriTheme/images/channels/drama.png"},
+    {"slug": "rotana-khaleejiya", "name": "Rotana Khalijia",   "logo": "https://rotana.net/assets/themes/TriTheme/images/channels/khaleejiya.png"},
+    {"slug": "rotana-music",      "name": "Rotana Music",      "logo": "https://rotana.net/assets/themes/TriTheme/images/channels/music.png"},
+    {"slug": "rotana-clip",       "name": "Rotana Clip",       "logo": "https://rotana.net/assets/themes/TriTheme/images/channels/clip.png"},
+    {"slug": "rotana-aflam",      "name": "Rotana Aflam",      "logo": "https://rotana.net/assets/themes/TriTheme/images/channels/aflam.png"},
+    {"slug": "rotana-comedy",     "name": "Rotana Comedy",     "logo": "https://rotana.net/assets/themes/TriTheme/images/channels/comedy.png"},
+    {"slug": "rotana-kids",       "name": "Rotana Kids",       "logo": "https://rotana.net/assets/themes/TriTheme/images/channels/kids.png"},
+]
+
+def get_rotana_stream(slug):
+    """
+    hibridcdn API'sinden token'lı m3u8 URL'si alır.
+    API yanıtı base64 kodlu JS parçaları içeriyor; decode edince JSON geliyor.
+    """
+    ts = int(time.time() * 1000)
+    api_url = f"https://hiplayer.hibridcdn.net/l/{slug}?_={ts}"
+    try:
+        r = SESSION.get(api_url, timeout=15,
+                        headers={"Referer": "https://rotana.net/", "Origin": "https://rotana.net"})
+        text = r.text
+
+        # base64 parçalarını bul (uzun eYJ... ile başlayan)
+        segments = re.findall(r"['\"]([A-Za-z0-9+/=]{40,})['\"]", text)
+        for seg in segments:
+            # padding düzelt
+            padding = 4 - len(seg) % 4
+            if padding != 4:
+                seg += "=" * padding
+            try:
+                decoded = base64.b64decode(seg).decode("utf-8", errors="ignore")
+                if "streamUrl" in decoded:
+                    data = json.loads(decoded)
+                    return data.get("streamUrl") or data.get("stream_url")
+            except Exception:
+                continue
+
+        # Doğrudan m3u8 ara
+        m3u8 = re.search(r'(https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*)', text)
+        if m3u8:
+            return m3u8.group(1)
+
+    except Exception as e:
+        print(f"    [HATA] {slug}: {e}")
+    return None
+
+
 def scrape_rotana():
-    # Rotana YouTube canlı yayın linkleri
-    channels = [
-        {"name": "Rotana Classic",  "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Rotana_Classic.png/100px-Rotana_Classic.png",  "url": "https://www.youtube.com/@RotanaClassic/live",   "group": "Rotana"},
-        {"name": "Rotana Cinema",   "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Rotana_Cinema.png/100px-Rotana_Cinema.png",    "url": "https://www.youtube.com/@RotanaCinema/live",    "group": "Rotana"},
-        {"name": "Rotana Khalijia", "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Rotana_Khalijia.png/100px-Rotana_Khalijia.png","url": "https://www.youtube.com/@RotanaKhalijia/live",  "group": "Rotana"},
-        {"name": "Rotana Music",    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Rotana_Music.png/100px-Rotana_Music.png",      "url": "https://www.youtube.com/@RotanaMusic/live",     "group": "Rotana"},
-        {"name": "Rotana Clip",     "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Rotana_Clip.png/100px-Rotana_Clip.png",       "url": "https://www.youtube.com/@RotanaClip/live",      "group": "Rotana"},
-    ]
-    print(f"[rotana.net] {len(channels)} kanal eklendi (YouTube canlı yayınları)")
+    channels = []
+    print("[rotana.net] Kanallar alınıyor (hibridcdn API)...")
+
+    for ch in ROTANA_CHANNELS:
+        stream_url = get_rotana_stream(ch["slug"])
+        if stream_url:
+            channels.append({
+                "name": ch["name"],
+                "logo": ch["logo"],
+                "url": stream_url,
+                "group": "Rotana",
+            })
+            print(f"  ✓ {ch['name']} -> {stream_url[:60]}")
+        else:
+            print(f"  ✗ {ch['name']} -> stream alınamadı, atlandı")
+        time.sleep(1)
+
+    print(f"  -> Toplam {len(channels)} Rotana kanalı eklendi")
     return channels
 
 
@@ -276,7 +284,7 @@ def build_m3u(channels):
 
 def main():
     print("=" * 55)
-    print("TV Kanal Scraper v2 başlatılıyor...")
+    print("TV Kanal Scraper v3 başlatılıyor...")
     print(f"Tarih: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("=" * 55)
 
