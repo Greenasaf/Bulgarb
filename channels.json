@@ -1,800 +1,230 @@
 [
   {
-    "name": "AMC",
-    "logo": "",
-    "url": "https://cdn.bg-gledai.video/embed.php?my=https://www.bg-gledai.video/amc",
-    "group": "BG-Gledai"
-  },
-  {
-    "name": "Epic Drama",
-    "logo": "",
-    "url": "https://cdn.bg-gledai.video/embed.php?my=https://www.bg-gledai.video/epic-drama",
-    "group": "BG-Gledai"
-  },
-  {
-    "name": "A SPOR",
-    "logo": "",
-    "url": "https://cdn.bg-gledai.video/embed.php?my=https://www.bg-gledai.video/a-spor",
-    "group": "BG-Gledai"
-  },
-  {
-    "name": "BEİN SPORTS HABER",
-    "logo": "",
-    "url": "https://cdn.bg-gledai.video/embed.php?my=https://www.bg-gledai.video/bein-sports-haber",
-    "group": "BG-Gledai"
-  },
-  {
-    "name": "Nick JR",
-    "logo": "",
-    "url": "https://cdn.bg-gledai.video/embed.php?my=https://www.bg-gledai.video/nick-jr",
-    "group": "BG-Gledai"
-  },
-  {
-    "name": "thumbnail",
-    "logo": "https://www.bg-gledai.video/wp-content/uploads/amc-1-144x144.png",
-    "url": "https://cdn.bg-gledai.video/embed.php?my=https://www.bg-gledai.video/amc",
-    "group": "BG-Gledai"
-  },
-  {
-    "name": "thumbnail",
-    "logo": "https://www.bg-gledai.video/wp-content/uploads/epic_drama-144x144.png",
-    "url": "https://cdn.bg-gledai.video/embed.php?my=https://www.bg-gledai.video/epic-drama",
-    "group": "BG-Gledai"
-  },
-  {
-    "name": "thumbnail",
-    "logo": "https://www.bg-gledai.video/wp-content/uploads/aspor_png-144x144.png",
-    "url": "https://cdn.bg-gledai.video/embed.php?my=https://www.bg-gledai.video/a-spor",
-    "group": "BG-Gledai"
-  },
-  {
-    "name": "thumbnail",
-    "logo": "https://www.bg-gledai.video/wp-content/uploads/beinsports_haber-144x144.png",
-    "url": "https://cdn.bg-gledai.video/embed.php?my=https://www.bg-gledai.video/bein-sports-haber",
-    "group": "BG-Gledai"
-  },
-  {
-    "name": "thumbnail",
-    "logo": "https://www.bg-gledai.video/wp-content/uploads/nickjr_png-144x144.png",
-    "url": "https://cdn.bg-gledai.video/embed.php?my=https://www.bg-gledai.video/nick-jr",
-    "group": "BG-Gledai"
-  },
-  {
-    "name": "MATCH! Futbol 3",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_match-futbol-3-logo_20251128174147.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "MATCH! Futbol 2",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_match-futbol-2-logo_20251128173920.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "MATCH! Futbol 1",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_match-futbol-1-logo_20251128173259.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Cartoonito",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_cartoonito-logo_20251105165544.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Test H",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_history-channel-bg-logo_20250915175514.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
     "name": "Nick Jr. RU",
     "logo": "https://www.gledaitv.fan/upload/tv/k_nick-jr-ru-logo_20250404121512.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://s.xittv.net/lts_REbLkoiH3ILG3ChNCA/210/1743776006/index.m3u8",
     "group": "Спортни"
   },
   {
     "name": "Nickelodeon RU",
     "logo": "https://www.gledaitv.fan/upload/tv/k_nickelodeon-ru-logo_20250404121253.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://s.xittv.net/Ei39WnMjVkzV4qpfjrVE1A/155/1743775891/index.m3u8",
     "group": "Спортни"
   },
   {
     "name": "MTV 00s",
     "logo": "https://www.gledaitv.fan/upload/tv/k_mtv-00s-logo_20250404120020.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "MTV Hits",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_mtv-hits-logo_20250404115742.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Bayerischer Rundfunk",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_bayerischer-rundfunk-logo_20241018150811.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://autopilot.catcast.tv/mobile.m3u8?channel_id=41188&token=a5d27b47b383b3d83db5d577020d7911&server=v2.catcast.tv",
     "group": "Спортни"
   },
   {
     "name": "WDR",
     "logo": "https://www.gledaitv.fan/upload/tv/k_wdr-logo_20241018145854.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Scream",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_scream-logo_20241018104926.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Pervyy kanal",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_--logo_20241018103804.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://wdrfsww247.akamaized.net/hls/live/2009628/wdr_msl4_fs247ww/master.m3u8",
     "group": "Спортни"
   },
   {
     "name": "Kanal 3",
     "logo": "https://www.gledaitv.fan/upload/tv/k_kanal-3-logo_20241014173941.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Bulgaria ON AIR Tv",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_bulgaria-on-air-tv-logo_20241014173407.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Bulgaria 24",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_bulgaria-24-logo_20241014172429.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Kanal 0",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_kanal-0-logo_20241014172146.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://c.eticket.services/kanal3/tracks-v1a1/mono.m3u8",
     "group": "Спортни"
   },
   {
     "name": "AGRO",
     "logo": "https://www.gledaitv.fan/upload/tv/k_agro-logo_20241014171951.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "VTK",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_vtk-logo_20241014171657.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Code Fashion",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_code-fashion-logo_20241014171352.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Code Health",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_code-health-logo_20241014171123.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "TVN",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_tvn-logo_20241014165058.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Kino Nova",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_kino-nova-logo_20240911200018.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "DocuBox",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_docubox-logo_20240827155005.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Investigation Discovery",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_investigation-discovery-logo_20240827154313.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "ARD",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_ard-logo_20240827101910.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://restr2.bgtv.bg/agro/hls/agro.m3u8",
     "group": "Спортни"
   },
   {
     "name": "TV5 Monde",
     "logo": "https://www.gledaitv.fan/upload/tv/k_tv5-monde-logo_20240824145159.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://ott.tv5monde.com/Content/HLS/Live/channel(info)/index.m3u8",
     "group": "Спортни"
   },
   {
     "name": "France 24",
     "logo": "https://www.gledaitv.fan/upload/tv/k_france-24-logo_20240824144839.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://www.youtube.com/watch?v=live_stream",
     "group": "Спортни"
   },
   {
     "name": "C8 FR",
     "logo": "https://www.gledaitv.fan/upload/tv/k_c8-fr-logo_20240824144631.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://www.dailymotion.com/video/x5gv5rr",
     "group": "Спортни"
   },
   {
     "name": "BFM",
     "logo": "https://www.gledaitv.fan/upload/tv/k_bfm-logo_20240824144203.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "DEUTSCHE WELLE",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_deutsche-welle-logo_20240823145944.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "RTL",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_rtl-logo_20240823145302.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_TV/index.m3u8?start=LIVE&end=END",
     "group": "Спортни"
   },
   {
     "name": "ZDF",
     "logo": "https://www.gledaitv.fan/upload/tv/k_zdf-logo_20240823145011.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://s6.hopslan.com/zdf1111/tracks-v1a1/mono.m3u8",
     "group": "Спортни"
   },
   {
     "name": "PRO 7",
     "logo": "https://www.gledaitv.fan/upload/tv/k_pro-7-logo_20240823144445.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://s6.hopslan.com/pro7x1/tracks-v1a1/mono.m3u8",
     "group": "Спортни"
   },
   {
     "name": "Sila",
     "logo": "https://www.gledaitv.fan/upload/tv/k_sila-logo_20240823142706.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://bkm.beetv.kz/btv/live/hls/000007802.m3u8",
     "group": "Спортни"
   },
   {
     "name": "FITE",
     "logo": "https://www.gledaitv.fan/upload/tv/k_fite-logo_20240823142430.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://cdn-cf.fite.tv/linear/fite247/playlist.m3u8",
     "group": "Спортни"
   },
   {
     "name": "BEK SPORTS",
     "logo": "https://www.gledaitv.fan/upload/tv/k_bek-sports-logo_20240823142135.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://cdn3.wowza.com/5/ZWQ1K2NYTmpFbGsr/BEK-WOWZA-1/smil:BEKPRIMEW.smil/playlist.m3u8",
     "group": "Спортни"
   },
   {
     "name": "RU TV",
     "logo": "https://www.gledaitv.fan/upload/tv/k_ru-tv-logo_20240822163725.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://hls-03-video.webcaramba.com/rutv/live.m3u8",
     "group": "Спортни"
   },
   {
     "name": "Carousel",
     "logo": "https://www.gledaitv.fan/upload/tv/k_carousel-logo_20240822162847.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://streaming.skynetconnect.online/live/232-req_offset_28000000-req_window_0-1k_v5.m3u8",
     "group": "Спортни"
   },
   {
     "name": "Russia 1",
     "logo": "https://www.gledaitv.fan/upload/tv/k_russia-1-logo_20240822162221.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/russia1-hd/index.m3u8",
     "group": "Спортни"
   },
   {
     "name": "1 HD TV",
     "logo": "https://www.gledaitv.fan/upload/tv/k_1-hd-logo_20240822154318.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Nick Toons",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_nick-toons-logo_20240820151114.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Viasat Nature",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_viasat-nature-logo_20240820150835.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Viasat Explore",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_viasat-explore-logo_20240820150649.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Travel Channel",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_travel-channel-logo_20240820150556.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "TLC BG",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_tlc-bg-logo_20240820145759.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://s.xittv.net/7rqoi8QBU0HXTM2ojJ2zig/122/1743775331/index.m3u8",
     "group": "Спортни"
   },
   {
     "name": "The Voice",
     "logo": "https://www.gledaitv.fan/upload/tv/k_the-voice-logo_20240820145619.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Ring BG",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_ring-bg-logo_20240820145459.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Planeta HD BG",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_planeta-hd-logo_20240820145401.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Planeta Folk",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_planeta-folk-logo_20240820145310.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Nova Sport",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_nova-sport-logo_20240820145156.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Nova",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_nova-tv-logo_20240820145031.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Nick Jr.",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_nick-jr-logo_20240820144650.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Nickelodeon",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_nickelodeon-logo_20240820144449.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "National Geographic",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_national-geographic-channel-logo_20240820144345.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Nat Geo Wild",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_nat-geo-wild-logo_20240820144252.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Movie Star",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_movie-star-logo_20240820144115.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Max Sport 4",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_max-sport-4-logo_20240820143917.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Max Sport 3",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_max-sport-3-logo_20240820143807.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Max Sport 2",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_max-sport-2-logo_20240820143632.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Max Sport 1",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_max-sport-1-logo_20240820143530.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Star Life",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_fox-life-logo_20240820143156.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Star Crime",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_star-crime-logo_20240820143035.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "STAR Channel",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_star-logo_20240820142504.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "FilmBox Stars",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_filmbox-stars-logo_20240820142839.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "FilmBox Extra",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_filmbox-extra-logo_20240820133950.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Fen TV",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_fen-tv-logo_20240820133830.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://bss1.neterra.tv/thevoice/stream_1.m3u8",
     "group": "Спортни"
   },
   {
     "name": "Evrokom",
     "logo": "https://www.gledaitv.fan/upload/tv/k_evrokom-logo_20240820133731.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Eurosport 2 BG",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_eurosport-2-logo_20240820133425.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Eurosport 1 BG",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_eurosport-1-logo_20240820133202.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Epic Drama",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_epic-drama-logo_20240820132902.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Disney Channel",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_disney-channel-logo_20240820132440.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Discovery Channel",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_discovery-channel-logo_20240820132208.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Diema Family",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_diema-family-logo_20240820132057.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Diema",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_diema-logo_20240820131916.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://live.ecomservice.bg/hls/stream.m3u8",
     "group": "Спортни"
   },
   {
     "name": "City Tv",
     "logo": "https://www.gledaitv.fan/upload/tv/k_city-tv-logo_20240820131656.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Cartoon Network",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_cartoon-network-logo_20240819214852.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Bulgaria ON AIR",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_bulgaria-on-air-logo_20240819214715.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "bTV Lady",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_btv-lady-logo_20240819214517.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "bTV Comedy",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_btv-comedy-logo_20240819214203.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "bTV Cinema",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_btv-cinema-logo_20240819213838.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "bTV Action",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_btv-action-logo_20240819213614.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "bTV",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_btv-logo_20240819213348.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Balkanika Tv",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_balkanika-tv-logo_20240819212856.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "AXN",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_axn-logo_20240819212646.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Animal Planet",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_animal-planet-logo_20240819212508.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "AMC",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_amc-logo_20240819212349.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "24 Kitchen",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_24-kitchen-logo_20240819212026.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Diema Sport 3",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_diema-sport-3-logo_20240819161836.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Diema Sport 2",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_diema-sport-2-logo_20240819161729.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Diema Sport",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_diema-sport-logo_20240819161622.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "BNT 4",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_bnt-4-logo_20240819160919.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "BNT 3",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_bnt-3-logo_20240819160336.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "BNT 2",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_bnt-2-logo_20240819160058.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "BNT 1",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_bnt-1-online-logo_20240819155745.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "ATV",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_atv-online-logo_20240819155302.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "FOX TV",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_fox-tv-logo_20240819154846.png",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "TRT 1",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_trt-1-logo_20240819154036.jpg",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://tv.city.bg/play/tshls/citytv/3.m3u8",
     "group": "Спортни"
   },
   {
     "name": "TRT Belgesel",
     "logo": "https://www.gledaitv.fan/upload/tv/k_trt-belgesel-logo_20240623013851.jpg",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8",
     "group": "Спортни"
   },
   {
     "name": "TJK Tv",
     "logo": "https://www.gledaitv.fan/upload/tv/k_tjk-tv-logo_20240623013628.jpg",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://tjktv-live.tjk.org/tjktv.m3u8",
     "group": "Спортни"
   },
   {
     "name": "DMAX",
     "logo": "https://www.gledaitv.fan/upload/tv/k_dmax-logo_20240623013500.jpg",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://dogus-live.daioncdn.net/dmax/dmax_720p.m3u8",
     "group": "Спортни"
   },
   {
     "name": "TLC",
     "logo": "https://www.gledaitv.fan/upload/tv/k_tlc-logo_20240623013349.jpg",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://dogus-live.daioncdn.net/tlc/tlc.m3u8",
     "group": "Спортни"
   },
   {
     "name": "Sports Tv",
     "logo": "https://www.gledaitv.fan/upload/tv/k_sports-tv-logo_20240623013238.jpg",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Bein Sports",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_bein-sports-logo_20240623012954.jpg",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://live.sportstv.com.tr/hls/low/sportstv_fhd/index.m3u8",
     "group": "Спортни"
   },
   {
     "name": "Tatlıses Tv",
     "logo": "https://www.gledaitv.fan/upload/tv/k_tatlises-tv-logo_20240623012808.jpg",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://live.artidijitalmedya.com/artidijital_tatlisestv/tatlisestv/playlist.m3u8",
     "group": "Спортни"
   },
   {
     "name": "Trt Müzik",
     "logo": "https://www.gledaitv.fan/upload/tv/k_trt-muzik-logo_20240623012606.jpg",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Kanal D",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_kanal-d-logo_20240623012430.jpg",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Show Tv",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_show-tv-logo_20240623012328.jpg",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Star Tv",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_star-tv-logo_20240623012157.jpg",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://tv-trtmuzik.medya.trt.com.tr/master.m3u8",
     "group": "Спортни"
   },
   {
     "name": "Power Türk",
     "logo": "https://www.gledaitv.fan/upload/tv/k_power-turk-logo_20240623012030.jpg",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://livetv.powerapp.com.tr/powerturkTV/powerturkhd.smil/playlists.m3u8",
     "group": "Спортни"
   },
   {
     "name": "Kral Pop Tv",
     "logo": "https://www.gledaitv.fan/upload/tv/k_kral-pop-tv-logo_20240623011836.jpg",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://dogus-live.daioncdn.net/kralpoptv/playlist.m3u8",
     "group": "Спортни"
   },
   {
     "name": "Byeaz Tv",
     "logo": "https://www.gledaitv.fan/upload/tv/k_byeaz-tv-logo_20240623011637.jpg",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Trt Spor",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_trt-spor-logo_20240623010112.jpg",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
-    "group": "Спортни"
-  },
-  {
-    "name": "Yaban Tv",
-    "logo": "https://www.gledaitv.fan/upload/tv/k_yaban-tv-logo_20190705173443.jpg",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://beyaztv.daioncdn.net/beyaztv/beyaztv.m3u8?app=fcd5c66b-da9d-44ba-a410-4f34805c397d&ce=3",
     "group": "Спортни"
   },
   {
     "name": "Trt Çocuk",
     "logo": "https://www.gledaitv.fan/upload/tv/k_trt-cocuk-logo_20240623011311.jpg",
-    "url": "https://cdn.gledaitv.fan/guide_fan.php?my=24kitchen",
+    "url": "https://tv-trtcocuk.medya.trt.com.tr/master.m3u8",
     "group": "Спортни"
   },
   {
     "name": "Rotana Classic",
-    "logo": "https://rotana.net/images/channels/rotana-classic.png",
-    "url": "https://rotana.net/en/channels#/live",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Rotana_Classic.png/100px-Rotana_Classic.png",
+    "url": "https://www.youtube.com/@RotanaClassic/live",
     "group": "Rotana"
   },
   {
     "name": "Rotana Cinema",
-    "logo": "https://rotana.net/images/channels/rotana-cinema.png",
-    "url": "https://rotana.net/en/channels#/live",
-    "group": "Rotana"
-  },
-  {
-    "name": "Rotana Drama",
-    "logo": "https://rotana.net/images/channels/rotana-drama.png",
-    "url": "https://rotana.net/en/channels#/live",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Rotana_Cinema.png/100px-Rotana_Cinema.png",
+    "url": "https://www.youtube.com/@RotanaCinema/live",
     "group": "Rotana"
   },
   {
     "name": "Rotana Khalijia",
-    "logo": "https://rotana.net/images/channels/rotana-khalijia.png",
-    "url": "https://rotana.net/en/channels#/live",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Rotana_Khalijia.png/100px-Rotana_Khalijia.png",
+    "url": "https://www.youtube.com/@RotanaKhalijia/live",
     "group": "Rotana"
   },
   {
     "name": "Rotana Music",
-    "logo": "https://rotana.net/images/channels/rotana-music.png",
-    "url": "https://rotana.net/en/channels#/live",
-    "group": "Rotana"
-  },
-  {
-    "name": "Rotana Aflam",
-    "logo": "https://rotana.net/images/channels/rotana-aflam.png",
-    "url": "https://rotana.net/en/channels#/live",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Rotana_Music.png/100px-Rotana_Music.png",
+    "url": "https://www.youtube.com/@RotanaMusic/live",
     "group": "Rotana"
   },
   {
     "name": "Rotana Clip",
-    "logo": "https://rotana.net/images/channels/rotana-clip.png",
-    "url": "https://rotana.net/en/channels#/live",
-    "group": "Rotana"
-  },
-  {
-    "name": "Rotana Plus",
-    "logo": "https://rotana.net/images/channels/rotana-plus.png",
-    "url": "https://rotana.net/en/channels#/live",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Rotana_Clip.png/100px-Rotana_Clip.png",
+    "url": "https://www.youtube.com/@RotanaClip/live",
     "group": "Rotana"
   }
 ]
