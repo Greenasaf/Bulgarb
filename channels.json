@@ -196,35 +196,5 @@
     "logo": "https://www.gledaitv.fan/upload/tv/k_trt-cocuk-logo_20240623011311.jpg",
     "url": "https://tv-trtcocuk.medya.trt.com.tr/master.m3u8",
     "group": "Спортни"
-  },
-  {
-    "name": "Rotana Classic",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Rotana_Classic.png/100px-Rotana_Classic.png",
-    "url": "https://www.youtube.com/@RotanaClassic/live",
-    "group": "Rotana"
-  },
-  {
-    "name": "Rotana Cinema",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Rotana_Cinema.png/100px-Rotana_Cinema.png",
-    "url": "https://www.youtube.com/@RotanaCinema/live",
-    "group": "Rotana"
-  },
-  {
-    "name": "Rotana Khalijia",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Rotana_Khalijia.png/100px-Rotana_Khalijia.png",
-    "url": "https://www.youtube.com/@RotanaKhalijia/live",
-    "group": "Rotana"
-  },
-  {
-    "name": "Rotana Music",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Rotana_Music.png/100px-Rotana_Music.png",
-    "url": "https://www.youtube.com/@RotanaMusic/live",
-    "group": "Rotana"
-  },
-  {
-    "name": "Rotana Clip",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Rotana_Clip.png/100px-Rotana_Clip.png",
-    "url": "https://www.youtube.com/@RotanaClip/live",
-    "group": "Rotana"
   }
 ]
