@@ -1,0 +1,41 @@
+name: TV Kanalları Güncelle
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-channels:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: 📥 Kodu indir
+        uses: actions/checkout@v4
+
+      - name: 🐍 Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 📦 Paketleri yükle
+        run: pip install requests beautifulsoup4 lxml
+
+      - name: 🚀 Scraper'ı çalıştır
+        run: python scraper.py
+
+      - name: 📋 M3U içeriğini göster
+        run: head -30 channels.m3u || true
+
+      - name: 💾 Değişiklikleri commit et
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Actions Bot"
+          git add channels.m3u channels.json
+          git diff --staged --quiet || git commit -m "🔄 Kanallar güncellendi - $(date +'%Y-%m-%d %H:%M')"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
