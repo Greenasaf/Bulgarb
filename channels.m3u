@@ -1,11 +1,7 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://www.gledaitv.fan/upload/tv/k_nick-jr-ru-logo_20250404121512.png" group-title="Спортни",Nick Jr. RU
-https://s.xittv.net/lts_REbLkoiH3ILG3ChNCA/210/1743776006/index.m3u8
 #EXTINF:-1 tvg-logo="https://www.gledaitv.fan/upload/tv/k_nickelodeon-ru-logo_20250404121253.png" group-title="Спортни",Nickelodeon RU
 https://s.xittv.net/Ei39WnMjVkzV4qpfjrVE1A/155/1743775891/index.m3u8
 #EXTINF:-1 tvg-logo="https://www.gledaitv.fan/upload/tv/k_mtv-00s-logo_20250404120020.png" group-title="Спортни",MTV 00s
 https://autopilot.catcast.tv/mobile.m3u8?channel_id=41188&token=a5d27b47b383b3d83db5d577020d7911&server=v2.catcast.tv
-#EXTINF:-1 tvg-logo="https://www.gledaitv.fan/upload/tv/k_agro-logo_20241014171951.png" group-title="Спортни",AGRO
-https://restr2.bgtv.bg/agro/hls/agro.m3u8
 #EXTINF:-1 tvg-logo="https://www.gledaitv.fan/upload/tv/k_the-voice-logo_20240820145619.png" group-title="Спортни",The Voice
 https://bss1.neterra.tv/thevoice/stream_1.m3u8
