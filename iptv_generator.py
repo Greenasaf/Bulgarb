@@ -1016,7 +1016,10 @@ def extract_m3u8_from_text(html_content):
 
 
 def extract_video_url(url):
-    """Extract video URL by first checking HTML in responses, then network requests"""
+    """Extract video URL by first checking HTML in responses, then network requests.
+    Tries Player 1, then Player 2, then Player 3 if the previous one doesn't
+    yield an m3u8 stream (some channels only expose the stream on a
+    secondary/tertiary player)."""
     captured_urls = []
 
     def handle_response(response):
@@ -1055,14 +1058,26 @@ def extract_video_url(url):
 
         try:
             page.goto(url, wait_until="networkidle")
-            page.wait_for_selector('p:has-text("Не давам съгласие")', timeout=1000)
-            page.click('p:has-text("Не давам съгласие")')
 
-            page.wait_for_selector('a:has-text("Player 1")', timeout=1000)
-            page.click('a:has-text("Player 1")')
+            # Consent (cookie) button doesn't always appear on every page,
+            # so don't let a missing consent button abort the whole extraction.
+            try:
+                page.wait_for_selector('p:has-text("Не давам съгласие")', timeout=3000)
+                page.click('p:has-text("Не давам съгласие")')
+            except Exception:
+                pass
 
-            if not captured_urls:
-                page.wait_for_timeout(5000)
+            # Try Player 1, then Player 2, then Player 3 until we capture an m3u8 URL.
+            for player_label in ["Player 1", "Player 2", "Player 3"]:
+                if captured_urls:
+                    break
+                try:
+                    page.wait_for_selector(f'a:has-text("{player_label}")', timeout=3000)
+                    page.click(f'a:has-text("{player_label}")')
+                    page.wait_for_timeout(4000)  # give the stream time to load/be captured
+                except Exception as e:
+                    print(f"Could not click {player_label}: {e}")
+                    continue
 
         except Exception as e:
             print(f"Error during extraction: {e}")
